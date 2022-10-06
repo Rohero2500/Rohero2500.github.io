@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Teste</title>
-    <style> h1{color: red;}</style>
-     <script> 
-         window.onload = roda;
-        function roda()
-        {
-        var titulo = document.getElementById("Segundo"); 
-        titulo.innerHTML = "JS rodando";
-        }
-    </script>                  
+    <script> 
+    window.onload = load;
+
+
+    function load()
+    {
+        
+     var escola = document.getElementById("escola");
+     escola.innerHTML = "IFSP";
+     var curso = document.getElementById("curso");
+     curso.innerHTML = "1 info";
+      var nome = document.getElementById("nome");
+     nome.innerHTML = "Rodrigo Cesar Vigo de Souza";
+    }
+        
+        
+    </script>         
 </head>
 <body>
-     <h1 id="primeiro">Olá</h1>
-     <h1 id="Segundo">Aprendendo JS</h1> 
+     <h1 id="escola">Escola</h1>
+     <h1 id="curso">Curso</h1> 
+     <h3 id="nome">Nome</h3>
    
 </body>
 </html>
